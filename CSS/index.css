@@ -1,0 +1,40 @@
+body {
+  background-color: aliceblue;
+  /* background-color: aqua; */
+}
+
+.asterick::after {
+  content: "*";
+  color: red
+}
+
+.page {
+  padding-top: 10%;
+  height: 100%;
+}
+
+#gender-error {
+  margin-top: 15px;
+}
+
+label.error {
+  color: red;
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
+}
+
+input.error,
+textarea.error {
+  border: 1px dashed red;
+  font-weight: 300;
+  color: red;
+}
+
+#displayArea{
+  border : 1px solid black;
+}
+
+#displayArea td{
+  border : 1px solid black;
+}
