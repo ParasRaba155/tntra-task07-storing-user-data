@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../CSS/index.css">
+
+  <title>Form</title>
+
+</head>
+
+<body>
+  <div class="container bg-blue">
+    <div class="page bg-light">
+      <form id="myForm">
+        <div class="row">
+          <h1>Customer Detatils</h1>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" id="fname" name="fname" class="form-input" value="">
+            <p id="OP1"></p>
+            <label for="fname" class="">First Name</label>
+          </div>
+          <div class="col">
+            <input type="text" id="lname" name="lname" class="form-input" value="" >
+            <p id="OP2"></p>
+            <label for="fname">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="asterick">Address</p>
+            <input type="text" id="staddress" name="staddress" class="form-input" >
+            <label for="staddresss"></label>
+            <p id="OP3"></p>
+            <p>Street Address</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" id="staddress2" name="staddress2" class="form-input" >
+            <label for="staddresss"></label>
+            <p id="OPa"></p>
+            <p>Street Address line 2</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" id="city" name="city" class="form-input" >
+            <label for="city"></label>
+            <p id="OP4"></p>
+            <p>City</p>
+          </div>
+          <div class="col">
+            <input type="text" id="state" name="state" class="form-input" >
+            <label for="city"></label>
+            <p id="OP5"></p>
+            <p>Stete/Province</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" id="zipcode" name="zipcode" class="form-input" >
+            <label for="zipcode"></label>
+            <p id="OP6"></p>
+            <p>Zip-code</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="asterick">Phone Number</p>
+            <input type="tel" id="phone" class="form-input" name="phone" placeholder="(000) 0000-000" >
+            <p id="OP7"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Email</p>
+            <input type="text" id="email" class="form-input" name="email" placeholder="ex:email@yahoo.com" >
+            <label for="email"></label>
+            <p id="OP8"></p>
+            <p>Example@example.com</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>How did you here about us?</p>
+            <select name="foundus" id="foundus" class="form-input">
+              <option value="magazine">Magazine</option>
+              <option value="newspaper">Newspaper</option>
+              <option value="social">Social-media</option>
+              <option value="friend">Friend</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Feedback about us</p>
+            <textarea class="form-input t_area" id="feedback" name="feedback" rows="7" ></textarea>
+            <p id="OP9"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p>Suggestion for any further imporovement</p>
+            <textarea class="form-input t_area" id="suggest" name="suggest" rows="7"></textarea>
+            <p id="OP10"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label class="r_check">Will you be willing to recommand us<input type="checkbox" name="check"></label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <span>Gender :</span>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male"></label>
+            <span>Male</span>
+            <input type="radio" id="female" name="gender" value="Female" >
+            <label for="female"></label>
+            <span>Female</span>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other" id="here">Other</label>
+            <!-- <span>Other</span> -->
+            <p id="OPr"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <table>
+              <form>
+                <tr>
+                  <th class="empty_row number"></th>
+                  <th>Full Name</th>
+                  <th>Address</th>
+                  <th>Phone Number</th>
+                </tr>
+                <tr>
+                  <td class="tfield">1</td>
+                  <td><input type="text" class="wtd"></td>
+                  <td><input type="text" class="wtd"></td>
+                  <td><input type="text" class="wtd"></td>
+                </tr>
+                <tr>
+                  <td class="tfield">2</td>
+                  <td><input type="text" class="wtd"></td>
+                  <td><input type="text" class="wtd"></td>
+                  <td><input type="text" class="wtd"></td>
+                </tr>
+              </form>
+            </table>
+          </div>
+        </div>
+        <br>
+
+        <input type="submit" value="Submit" class="submit_class" id="Submit">
+      </form>
+    <div class="row">
+      <table id="displayArea">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>City</td>
+            <td>State</td>
+            <td>Zipcode</td>
+            <td>Phone No</td>
+            <td>Email</td>
+            <td>Feedback</td>
+            <td>Suggestion</td>
+            <td>Gender</td>
+          </tr>
+        </thead>
+        </table>
+      </div>
+
+    </div>
+    
+  </div>
+  <script src="../JS/jquery.min.js"></script>
+  <script src="../JS/jquery.validate.js"></script>
+  <script src="../JS/index.js"></script>
+  <!-- <script src="../JS/index2.js"></script> -->
+
+</body>
